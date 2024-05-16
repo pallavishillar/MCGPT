@@ -1,6 +1,9 @@
 import './App.css';
 import React from 'react';
 import { Link } from "react-router-dom";
+import LOGO2 from './images/LOGO2.png';
+import star1 from './images/star_1_DCD1D0.png';
+import star2 from './images/star_1_DCD1D0.png';
 
 
 function App() {
@@ -9,36 +12,38 @@ function App() {
       <div className='background-img'></div>
 
     <div class="bg-text">
-        <h2 class="text1">Empowering Financial Insights :</h2>
-        <h2 class="text2">Your Trusted Partner</h2>
+        <h2 class="text1">Empowering <span>Financial</span> Insights :</h2>
+        <h2 class="text2">Your <span>Trusted </span>Partner</h2>
     </div>
 
     <div>
-        <p>How can I help You ?</p>
+        <p class="text3">How can I help You ?</p>
         
         <button id="bubbleButton">
             <Link to="/Main">Let's Get Started</Link>
         </button>
+
         <div id="bubbleContainer"></div>
     </div>
 
 
-    {/* <div class="logo" style={{top: '38px', left:'-40px'}}>
-        <img src={Logo1 + '/images/star_1_DCD1D0.png'}></img>
-    </div> */}
+     <div>
+        <img class='LOGO2' src={LOGO2}></img>
+    </div> 
 
-
-    {/* <div style={{position: 'absolute', top: '58px', left: '150px', fontSize: '36px'}}>
+{/* 
+    <div style={{position: 'absolute', top: '58px', left: '150px', fontSize: '36px'}}>
         <span id="logo-name">MoneyControl</span>
-    </div> */}
+    </div>  */}
 
-    {/* <div class="star" >
-        <img src={logo1}></img>
-    </div> */}
+
+    <div class="star" >
+        <img src={star1}></img>
+    </div>
     
 
     <div class="star2" >
-        <img src="./assets/img/star_1_DCD1D0.png"/>
+        <img src={star2}></img>
     </div>
 
     </div>

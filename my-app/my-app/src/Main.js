@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import userImageSrc from './images/user.png';
+import userImageSrc from './images/UserImg.png';
 import gptImageSrc from './images/LOGO.png';
 
 function Main() {
@@ -33,6 +33,15 @@ function Main() {
                 </div>
             `;
 
+            messageBox.innerHTML += `
+                <div class="message">
+                    <div class="user">
+                    <img src="${gptImageSrc}" alt="GPT" />
+                    </div>
+                    <div class="content">${formatMessage(responseData.output)}</div>
+                </div>
+            `;
+
             const response = await fetch(API_URL, {
                 method: 'POST',
                 mode: 'no-cors',
@@ -47,16 +56,6 @@ function Main() {
             }
 
             const responseData = await response.json();
-
-            // Display GPT response
-            messageBox.innerHTML += `
-                <div class="message">
-                    <div class="user">
-                    <img src="${gptImageSrc}" alt="GPT" />
-                    </div>
-                    <div class="content">${formatMessage(responseData.output)}</div>
-                </div>
-            `;
 
         } catch (error) {
             console.error('Error:', error);
