@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import userImageSrc from './images/UserImg.png';
-import gptImageSrc from './images/LOGO.png';
+import userImageSrc from './images/user.png';
+import gptImageSrc from './images/GP_LOGO.png';
 
 function Main() {
     const API_URL = 'http://localhost:8003/rag-redis/invoke';
@@ -11,7 +11,7 @@ function Main() {
         const messageBox = document.querySelector('#message-box');
         const userImage = document.querySelector('#user-image');
         const gptImage = document.querySelector('#gpt-image');
-        const cancelButton = document.querySelector('#cancelButton');
+        //const cancelButton = document.querySelector('#cancelButton');
 
         const message = messageInput.value.trim();
         if (message === '') return;
@@ -33,14 +33,14 @@ function Main() {
                 </div>
             `;
 
-            messageBox.innerHTML += `
-                <div class="message">
-                    <div class="user">
-                    <img src="${gptImageSrc}" alt="GPT" />
-                    </div>
-                    <div class="content">${formatMessage(responseData.output)}</div>
-                </div>
-            `;
+            // messageBox.innerHTML += `
+            //     <div class="message">
+            //         <div class="user">
+            //         <img src="${gptImageSrc}" alt="GPT" />
+            //         </div>
+            //         <div class="content">${formatMessage(responseData.output)}</div>
+            //     </div>
+            // `;
 
             const response = await fetch(API_URL, {
                 method: 'POST',
@@ -59,9 +59,12 @@ function Main() {
 
         } catch (error) {
             console.error('Error:', error);
+
             messageBox.innerHTML += `
                 <div class="message">
-                    <div class="user">${gptImage}</div>
+                <div class="user">
+                     <img src="${gptImageSrc}" alt="GPT" />
+                </div>
                     <div class="content">An error occurred. Please try again.</div>
                 </div>
             `;
@@ -77,7 +80,6 @@ function Main() {
     };
 
     return (
-        
         <div className="container">
                 <div className="box" id="message-box"></div>
                     <div className="buttons">
@@ -95,7 +97,6 @@ function Main() {
                         </div>
                     </div>
                 </div>
-       
     );
 }
 

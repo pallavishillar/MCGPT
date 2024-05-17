@@ -27,14 +27,14 @@ function App() {
     </div>
 
 
-     <div>
+     {/* <div>
         <img class='LOGO2' src={LOGO2}></img>
-    </div> 
-
-{/* 
-    <div style={{position: 'absolute', top: '58px', left: '150px', fontSize: '36px'}}>
-        <span id="logo-name">MoneyControl</span>
     </div>  */}
+
+
+    {/* <div style={{position: 'absolute', top: '58px', left: '150px', fontSize: '30px'}}>
+        <span id="logo-name">FIN-TECH-AI</span>
+    </div>   */}
 
 
     <div class="star" >
