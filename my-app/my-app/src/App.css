@@ -1,33 +1,55 @@
-
-
-.background-img {
-  background-image: url(
-"./images/Desktop\ -\ 16.png"
-  );
-  background-size: "cover";
-  height: 100vh;
-  font-size: 50px;
-  background-repeat: no-repeat;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     /* height: 1024px; */
-    overflow: hidden; 
+    overflow: hidden;
 }
- .bg-text {
+
+
+.background-img {
+    background-image: url("./images/Desktop\ -\ 16.png"
+        );
+    background-size: "cover";
+    height: 100vh;
+    font-size: 50px;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    top: 70px;
+    left: 48px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+}
+
+.LOGO2 {    
+    position: absolute;
+    top: -780px;
+    left: 100px;
+    height: 30px;
+    width: 150px;
+
+}
+
+
+.bg-text {
     margin-top: -570px;
     margin-left: 600px;
-} 
+}
 
 .text1 {
     margin-left: 20px;
     font-size: 45px;
     color: #2D374A;
 }
+
+.text1 span{
+    color: #f26907;
+    font-size: 45px;
+} 
 
 .text2 {
     margin-left: 70px;
@@ -36,89 +58,83 @@ body {
     color: #2D374A;
 }
 
-p{
+.text2 span{
+    color: #333195;
+    font-size: 45px;
+} 
+
+.text3{
     margin-top: 50px;
-    margin-left: 780px;
-    font-size: 30px;
+    margin-left: 740px;
+    font-size: 33px;
 
 }
 
-#bubbleButton{
+#bubbleButton {
     width: 400px;
     height: 80px;
-    background: black;
+    background-color: transparent;
     color: white;
     border-radius: 50px;
     margin-top: 90px;
     margin-left: 720px;
     cursor: pointer;
+    border: 3px solid #6983b9;
 }
 
-a{
+a {
     text-decoration: none;
-    color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
 
-p{
+#bubbleButton:hover {
+    background-color: #6983b9;
+    color: white;
+}
+
+p {
     margin-bottom: 100px;
-    font-size: 25px
+    font-size: 25px;
 }
 
 .patua-one-regular {
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-
-#logo-name{
-  font-family:Georgia;
-  font-variant:small-caps;
-  font-weight: 600;
 }
-  
-  .star
-  {
+
+
+#logo-name {
+    font-family: Georgia;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.star {
     position: absolute;
     top: 500px;
     left: 450px;
-  }
+}
 
-  .star img{
+.star img {
     height: 150px;
     width: 150px;
 
-  }
+}
 
-  .star2
-  {
+.star2 {
     position: absolute;
     top: 500px;
     left: 1200px;
-  }
+}
 
-  .star2 img{
+.star2 img {
     height: 150px;
     width: 150px;
 
-  }
+}
 
-
-  .logo{
-    position: absolute;
-  }
-
-  .logo img{
-    position: absolute;
-    top: 0px; 
-    left: 100px; 
-    height: 80px;
-    width: 80px;
-
-  }
-
-  .navbar button {
+.navbar button {
     background: none;
     border: none;
     cursor: pointer;
@@ -130,65 +146,41 @@ p{
 }
 
 
-#logo-name{
+#logo-name {
     margin-bottom: 50px;
 
 }
 
 
 #bubbleButton {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .bubble {
-  position: absolute;
-  width: 40px; 
-  height: 40px; 
-  background-color: rgba(55, 55, 192, 0.668);
-  border-radius: 50%;
-  margin-left: 40px;
-  animation: bubbleAnim 2s forwards; 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(55, 55, 192, 0.668);
+    border-radius: 50%;
+    margin-left: 40px;
+    animation: bubbleAnim 2s forwards;
 }
 
 @keyframes bubbleAnim {
-  0% {
-    transform: scale(0.1);
-    opacity: 1;
-    bottom: -100px;
-    left: 850px;
-  }
-  100% {
-    transform: scale(45); 
-    opacity: 0;
-    bottom: 0px;
-  }
-}
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+        bottom: -100px;
+        left: 850px;
+    }
 
-
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-
-:root {
-    --colour-1: #B4C5CB;
-    --colour-2: #f7e6dd;
-    --colour-3: #1a1a1a;
-    --colour-4: #f0f0f0;
-    --colour-5: #181818;
-    --colour-6: #242424;
-
-    --accent: #a0c3ff;
-    --blur-bg: #f2f2f2;
-    --blur-border: #a0c3ff;
-    /* --user-input: #ebeef3; */
-    --conversations: black;
-}
-
-:root {
-    --font-1: "Inter", sans-serif;
-    --section-gap: 25px;
-    --border-radius-1: 8px;
+    100% {
+        transform: scale(45);
+        opacity: 0;
+        bottom: 0px;
+    }
 }
 
 
@@ -214,13 +206,12 @@ body {
 } */
 
 .container {
-  background-image: url(
-"./images/Plain_bg_1.png"
-  );
-  background-size: "cover";
-  height: 110vh;  
-  font-size: 50px;
-  background-repeat: no-repeat;
+    background-image: url("./images/Plain_bg_1.png"
+        );
+    background-size: "cover";
+    height: 110vh;
+    font-size: 50px;
+    background-repeat: no-repeat;
 }
 
 
@@ -228,28 +219,25 @@ body {
     font-family: "Patua One", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
 #logo-name {
-    font-family:Georgia;
-    font-variant:small-caps;
+    font-family: Georgia;
+    font-variant: small-caps;
     font-weight: 600;
     margin-left: 45px;
     font-size: 30px;
 }
 
-.logo{
-    position: absolute;
-  }
 
-  .logo img{
+.logo img {
     position: absolute;
-    top: -10px; 
-    left: 120px; 
+    top: -10px;
+    left: 120px;
     height: 50px;
-    width: 50px;
-  }
+    width: 70px;
+}
 
 .row {
     display: flex;
@@ -261,7 +249,7 @@ body {
 
 }
 
-.box { 
+.box {
     top: 65px;
     bottom: 10;
     left: 27px;
@@ -330,7 +318,7 @@ body {
     border-radius: 50px;
     /* backdrop-filter: blur(10px); */
     box-shadow: 0 4px 6px #5b5b5b;
-    
+
 }
 
 .conversation .user-input {
@@ -357,18 +345,22 @@ body {
 }
 
 .message .user {
+    margin-top: 50px;
     max-width: 7vh;
     max-height: 7vh;
     flex-shrink: 0;
+    margin-left: 50px;
+    gap: 16px;
 }
 
 .message .user img {
     width: 50px;
     height: 50px;
-    margin-top: 8px;
+    margin-top: 10px;
     object-fit: cover;
     border-radius: 8px;
 }
+
 
 .navbar button {
     background: none;
@@ -380,30 +372,6 @@ body {
     margin-left: 100px;
     margin-top: 40px;
 }
-/* 
-#toggle-switch {
-    display: none;
-    scroll-margin-top: 10px;
-}
-
-label[for="toggle-switch"] {
-    cursor: pointer;
-    position: relative;
-}
-
-label[for="toggle-switch"] i {
-    font-size: 24px;
-    transition: color 0.3s;
-
-}
-
-#sun-icon {
-    color: orange;
-}
-
-#moon-icon {
-    color: lightgray;
-} */
 
 /* Adjust the styling of the icons on hover*/
 label[for="toggle-switch"]:hover i {
@@ -459,7 +427,6 @@ label[for="toggle-switch"]:hover i {
     gap: var(--section-gap);
     padding: var(--section-gap);
     padding-bottom: 0;
-  
 }
 
 .message:last-child {
@@ -488,12 +455,15 @@ label[for="toggle-switch"]:hover i {
 }
 
 .message .content {
+    margin-top: 60px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     gap: 18px;
     overflow-wrap: break-word;
     font-size: 30px;
 }
+
 
 .message .content p,
 .message .content li,
@@ -504,6 +474,7 @@ label[for="toggle-switch"]:hover i {
 
 .message .user i {
     position: absolute;
+    margin-top: 60px;
     bottom: -6px;
     right: -6px;
     z-index: 1000;
@@ -708,7 +679,7 @@ select {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    }
+}
 
 #cursor {
     line-height: 17px;
@@ -746,6 +717,7 @@ select {
         background: #ffffff00;
     }
 }
+
 .grecaptcha-badge {
     visibility: hidden;
 }
@@ -784,7 +756,7 @@ select {
 
 
 a:-webkit-any-link {
-    color: var(--accent);
+    color: rgb(23, 17, 17);
 }
 
 .user-input textarea {
@@ -983,7 +955,7 @@ a:-webkit-any-link {
     border-radius: 10px;
 }
 
-.menu-item i{
+.menu-item i {
     margin-right: 10px;
 }
 
@@ -993,14 +965,14 @@ a:-webkit-any-link {
 }
 
 #menu-button {
-    margin-left: 5%;  
+    margin-left: 5%;
     margin-top: 20px;
 }
 
 .menu-button {
     border: none;
     border-radius: 5px;
-    padding: 40px 50px; 
+    padding: 40px 50px;
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
@@ -1011,7 +983,7 @@ a:-webkit-any-link {
     font-size: 16px;
     font-weight: bold;
     margin-left: 32px;
-    margin: 1px; 
+    margin: 1px;
 }
 
 
@@ -1105,19 +1077,33 @@ body {
     font-size: 15px;
 }
 
-h1,h2,h4,h5,h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
     font-size: 2em;
 }
 
-p,.conversations .title,.convo-title,.new_convo span,.bottom_buttons button span {
+p,
+.conversations .title,
+.convo-title,
+.new_convo span,
+.bottom_buttons button span {
     font-size: 23px;
 }
 
-.navbar button,.conversations .convo .left,.conversations .convo i,.message {
+.navbar button,
+.conversations .convo .left,
+.conversations .convo i,
+.message {
     font-size: 20px;
 }
 
-.message .content p,.message .content li,.message .content code,.user-input textarea {
+.message .content p,
+.message .content li,
+.message .content code,
+.user-input textarea {
     font-size: 30px;
 }
 
@@ -1131,29 +1117,30 @@ p,.conversations .title,.convo-title,.new_convo span,.bottom_buttons button span
     font-size: 25px;
 }
 
-.setting{
+.setting {
     font-size: 25px;
     margin-left: 20px;
 }
 
-.icon-name{
+.icon-name {
     font-size: 20px;
     text-align: center;
 }
 
-.Sign-up{
+.Sign-up {
     background-color: black;
     color: #fff;
     height: 50px;
     width: 110px;
     border-radius: 40px;
     margin-left: 1300px;
-    font-size: 25px; 
+    font-size: 25px;
 }
 
 .user {
     text-align: center;
-    position: relative; /* Add relative positioning */
+    position: relative;
+    /* Add relative positioning */
 }
 
 .user-img {
@@ -1176,18 +1163,18 @@ p,.conversations .title,.convo-title,.new_convo span,.bottom_buttons button span
     position: absolute;
     width: 310px;
     height: 218px;
-    top: 100%; 
-    left: 95%; 
-    transform: translateX(-50%); 
+    top: 100%;
+    left: 95%;
+    transform: translateX(-50%);
     background: #E0E0E0;
     border: 2px solid white;
     border-radius: 50px;
-    padding: 20px; 
+    padding: 20px;
     z-index: 999;
-    display: flex; 
-}   
+    display: flex;
+}
 
-#Sign-In-btn{
+#Sign-In-btn {
     margin-top: 80px;
     font-size: 20px;
     text-align: center;
@@ -1199,7 +1186,7 @@ p,.conversations .title,.convo-title,.new_convo span,.bottom_buttons button span
     border-radius: 30px;
 }
 
-#Log-out-btn{
+#Log-out-btn {
     margin-top: 80px;
     margin-left: 10px;
     font-size: 20px;
