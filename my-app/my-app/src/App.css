@@ -27,10 +27,9 @@ body {
 
 .LOGO2 {    
     position: absolute;
-    top: -780px;
-    left: 100px;
-    height: 30px;
-    width: 150px;
+    right: 8%;
+    height: 50px;
+    width: 250px;
 
 }
 
@@ -132,6 +131,11 @@ p {
     height: 150px;
     width: 150px;
 
+}
+
+.poweredby{
+    height: 50px;
+    width: 50px;
 }
 
 .navbar button {
@@ -260,6 +264,7 @@ body {
     overflow: auto;
     background: #CDC4C3;
     border-radius: 40px;
+    scroll-behavior: auto;
 }
 
 
