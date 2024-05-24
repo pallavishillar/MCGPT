@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './Main.css';
 import userImageSrc from './images/user.png';
 import gptImageSrc from './images/GP_LOGO.png';
 

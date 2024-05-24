@@ -27,15 +27,15 @@ function App() {
         <div id="bubbleContainer"></div>
     </div>
 
-
+{/* 
      <div>
         <img class='LOGO2' src={LOGO2}></img>
-    </div> 
+    </div>  */}
 
 
-    <div style={{position: 'absolute', top: '90px', left: '80px', fontSize: '30px'}}>
+    {/* <div style={{position: 'absolute', top: '90px', left: '80px', fontSize: '30px'}}>
         <span id="logo-name">FIN-TECH-AI</span>
-    </div>  
+    </div>   */}
 
 
     <div class="star" >
