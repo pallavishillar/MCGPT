@@ -20,10 +20,9 @@ function App() {
     <div>
         <p class="text3">How can I help You ?</p>
         
-        <button id="bubbleButton">
-            <Link to="/Main">Let's Get Started</Link>
-        </button>
-
+        <Link to="/Main">
+            <button id="bubbleButton">Let's Get Started</button>
+        </Link>
         <div id="bubbleContainer"></div>
     </div>
 
